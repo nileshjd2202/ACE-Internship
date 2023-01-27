@@ -10,13 +10,14 @@ alreadyNum = set()
 k = 0
 while(k<3):
     user_input = int(input("Enter number to get square: "))
-    if user_input in dict1 :
+    if user_input in dict1.keys :
         if user_input in alreadyNum:
             print("Already entered this number")
             k += 1
+        else:
+            print("Your output: " + str(dict1[user_input]))
         alreadyNum.add(user_input)
-        print("Your output: " + str(dict1[user_input]))
-        
+              
     elif k<3:
         k +=1 
         print("error: Number not in range")
