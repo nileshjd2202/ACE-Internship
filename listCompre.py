@@ -10,7 +10,8 @@ alreadyNum = set()
 k = 0
 while(k<3):
     user_input = int(input("Enter number to get square: "))
-    if user_input in dict1.keys :
+    val = dict1.get(user_input)
+    if val:
         if user_input in alreadyNum:
             print("Already entered this number")
             k += 1
